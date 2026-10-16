@@ -18,9 +18,9 @@
                 Digital signals power the digital world, yet most programmers know almost nothing about them.
                 Netsat offers a simple platform for anyone to learn on. No need for expensive SDR hardware or antennas.
             </p>
-            <h2 class="text">Ok, but what actually IS netsat?</h2>
+            <h2 class="text">Ok, but what actually IS Netsat?</h2>
             <p class="text">
-                Netsat is a websocket server that aims to emulate the experience of receiving a satelite. Connect, and "real"
+                Netsat is a websocket server that aims to emulate the experience of receiving a satellite. Connect, and "real"
                 radio samples will start streaming to your computer. What you do with them from there is up to you.
             </p>
             <p class="text">
@@ -36,12 +36,22 @@
             <a class="text" href="https://www.pysdr.org/">Check out PySDR here</a>
             <h3 class="text">Ready to begin? Try connecting to one of our satellites below using your favorite programming language.</h3>
             <h2 class="text">ALPHA</h2>
+            <p class="text">ws://alpha.netsat.space</p>
             <p class="text">
                 Alpha, our first satellite, is ideal for beginners. It is designed as a simplified model of a real satellite, minus a lot of the annoying bits.
                 Start here if learning about DSP for the first time.
             </p>
-            <p class="text">Sample rate: 3200 samples per second</p>
-            <p class="text">ws://alpha.netsat.space</p>
+            <ul>
+                <li class="text">Sample Format: Complex i16 pairs streamed as chunks of 96 samples</li>
+                <li class="text">Sample rate: 3200 samples per second</li>
+            </ul>
+            <details class="text">
+                <summary>If you would like to reverse engineer the signal details, don't look inside this spoiler</summary>
+                <ul>
+                    <li class="text">Sync Pattern: 0x1ACFFC1D</li>
+                    <li class="text">Packet Structure: Battery voltage (f32) Solar voltage (f32) Cpu Temp (f32,k) Vehicle Temp (f32,k), crc32</li>
+                </ul>
+            </details>
         </div>
     </body>
 </html>
