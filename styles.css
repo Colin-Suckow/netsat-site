@@ -1,0 +1,35 @@
+body {
+    background-color: #121212;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.text {
+    color: #e0e0e0;
+    font-family: 'Open Sans';
+}
+
+.header {
+    background-color: #2a3e69;
+    margin: 0px;
+}
+
+.header-text {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+}
+
+.content {
+    width: 80%;
+    padding: 8px;
+    margin: 8px;
+}
+
+img {
+    width: object-fit;
+}

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>NETSAT</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="content">
+            <h1 class="text">Welcome to NETSAT</h1>
+            <h3 class="text">
+                Netsat is a shared internet virtual satellite you can use to learn about digital signal processing.
+            </h3>
+            <img src="static/waterfall.png" width="800px">
+            <h2 class="text">Why Netsat?</h2>
+            <p class="text">
+                Digital signals power the digital world, yet most programmers know almost nothing about them.
+                Netsat offers a simple platform for anyone to learn on. No need for expensive SDR hardware or antennas.
+            </p>
+            <h2 class="text">Ok, but what actually IS netsat?</h2>
+            <p class="text">
+                Netsat is a websocket server that aims to emulate the experience of receiving a satelite. Connect, and "real"
+                radio samples will start streaming to your computer. What you do with them from there is up to you.
+            </p>
+            <p class="text">
+                Netsat is also a shared experience. This means that the same samples are broadcast to everyone at the same time.
+                Just like a real satellite, what you see is what everyone else sees. In practice this doesn't mean much now, but in the future
+                there might be events happening to our satellites that you could be one of the first to discover and share!
+            </p>
+            <h2 class="text">What if I don't know anything about signal processing?</h2>
+            <p class="text">
+                I'm not going to pretend I could write anything nearly as good as the resources that are already out there.
+                Instead, I'll link to one of my favorites, the excellent PySDR by Dr Marc Lichtman.
+            </p>
+            <a class="text" href="https://www.pysdr.org/">Check out PySDR here</a>
+            <h3 class="text">Ready to begin? Try connecting to one of our satellites below using your favorite programming language.</h3>
+            <h2 class="text">ALPHA</h2>
+            <p class="text">
+                Alpha, our first satellite, is ideal for beginners. It is designed as a simplified model of a real satellite, minus a lot of the annoying bits.
+                Start here if learning about DSP for the first time.
+            </p>
+            <p class="text">Sample rate: 3200 samples per second</p>
+            <p class="text">ws://alpha.netsat.space</p>
+        </div>
+    </body>
+</html>
