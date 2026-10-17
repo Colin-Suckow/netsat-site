@@ -13,8 +13,12 @@ body {
 }
 
 .header {
-    background-color: #2a3e69;
     margin: 0px;
+    text-align: end;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
 }
 
 .header-text {
